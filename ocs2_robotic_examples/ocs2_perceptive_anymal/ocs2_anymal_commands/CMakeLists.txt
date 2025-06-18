@@ -50,6 +50,7 @@ include_directories(
 add_library(${PROJECT_NAME}
   src/LoadMotions.cpp
   src/ModeSequenceKeyboard.cpp
+  src/ModeSequenceRosTopic.cpp
   src/MotionCommandController.cpp
   src/MotionCommandDummy.cpp
   src/MotionCommandInterface.cpp
@@ -92,6 +93,19 @@ target_link_libraries(gait_command_node
   ${catkin_LIBRARIES}
 )
 target_compile_options(gait_command_node PRIVATE ${OCS2_CXX_FLAGS})
+
+add_executable(gait_command_ros_node
+  src/AnymalGaitRosTopicNode.cpp
+)
+add_dependencies(gait_command_ros_node
+  ${${PROJECT_NAME}_EXPORTED_TARGETS}
+  ${catkin_EXPORTED_TARGETS}
+)
+target_link_libraries(gait_command_ros_node
+  ${PROJECT_NAME}
+  ${catkin_LIBRARIES}
+)
+target_compile_options(gait_command_ros_node PRIVATE ${OCS2_CXX_FLAGS})
 
 add_executable(motion_command_node
   src/AnymalMotionCommandNode.cpp
