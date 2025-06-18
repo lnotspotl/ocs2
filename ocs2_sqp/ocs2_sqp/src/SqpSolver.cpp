@@ -32,6 +32,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <iomanip>
 #include <iostream>
 #include <numeric>
+#include <fstream>
 
 #include <boost/filesystem.hpp>
 
