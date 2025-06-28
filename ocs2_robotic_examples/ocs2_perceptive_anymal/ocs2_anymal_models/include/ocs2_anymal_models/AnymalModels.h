@@ -24,6 +24,9 @@ std::string getUrdfString(AnymalModel model);
 std::unique_ptr<switched_model::InverseKinematicsModelBase> getAnymalInverseKinematics(const FrameDeclaration& frameDeclaration,
                                                                                        const std::string& urdf);
 
+std::unique_ptr<switched_model::InverseKinematicsModelBase> getGo2InverseKinematics(const FrameDeclaration& frameDeclaration,
+                                                                                       const std::string& urdf);
+
 std::unique_ptr<switched_model::KinematicsModelBase<ocs2::scalar_t>> getAnymalKinematics(const FrameDeclaration& frameDeclaration,
                                                                                          const std::string& urdf);
 
