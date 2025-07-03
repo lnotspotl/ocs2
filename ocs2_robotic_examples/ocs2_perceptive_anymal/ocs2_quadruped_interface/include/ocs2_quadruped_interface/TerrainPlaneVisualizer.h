@@ -20,7 +20,7 @@ namespace switched_model {
 class TerrainPlaneVisualizer {
  public:
   /** Visualization settings (publicly available) */
-  std::string frameId_ = "world";  // Frame name all messages are published in
+  std::string frameId_ = "odom";  // Frame name all messages are published in
   double planeWidth_ = 1.5;
   double planeLength_ = 1.5;
   double planeThickness_ = 0.005;
