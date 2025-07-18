@@ -29,6 +29,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include <ocs2_core/automatic_differentiation/CppAdInterface.h>
 
+#include <boost/process/search_path.hpp>
 #include <boost/filesystem.hpp>
 
 namespace ocs2 {
@@ -95,7 +96,8 @@ void CppAdInterface::createModels(ApproximationOrder approximationOrder, bool ve
 
   // Compiler objects, compile to temporary shared library file to avoid interference between processes
   CppAD::cg::ModelLibraryCSourceGen<scalar_t> libraryCSourceGen(sourceGen);
-  CppAD::cg::GccCompiler<scalar_t> gccCompiler;
+  std::string gccCompilerPath = boost::process::search_path("gcc").string();
+  CppAD::cg::GccCompiler<scalar_t> gccCompiler(gccCompilerPath);
   CppAD::cg::DynamicModelLibraryProcessor<scalar_t> libraryProcessor(libraryCSourceGen, libraryName_ + tmpName_);
   setCompilerOptions(gccCompiler);
 
