@@ -6,7 +6,7 @@ find_package(catkin REQUIRED COMPONENTS
     ocs2_switched_model_interface
     ocs2_pinocchio_interface
     ocs2_robotic_tools
-    ocs2_robotic_assets
+    gazebo_robotic_assets
     roslib
 )
 

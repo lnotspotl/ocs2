@@ -32,7 +32,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "ocs2_legged_robot/test/AnymalFactoryFunctions.h"
 
 #include <ocs2_centroidal_model/FactoryFunctions.h>
-#include <ocs2_robotic_assets/package_path.h>
+#include <gazebo_robotic_assets/package_path.h>
 
 #include "ocs2_legged_robot/common/ModelSettings.h"
 #include "ocs2_legged_robot/package_path.h"

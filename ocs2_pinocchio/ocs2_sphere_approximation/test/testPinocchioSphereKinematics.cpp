@@ -36,7 +36,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <ocs2_sphere_approximation/PinocchioSphereKinematics.h>
 #include <ocs2_sphere_approximation/PinocchioSphereKinematicsCppAd.h>
 
-#include <ocs2_robotic_assets/package_path.h>
+#include <gazebo_robotic_assets/package_path.h>
 #include <ocs2_robotic_tools/common/SkewSymmetricMatrix.h>
 
 #include <ocs2_pinocchio_interface/urdf.h>

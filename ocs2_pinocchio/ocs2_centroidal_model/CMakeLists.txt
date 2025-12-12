@@ -7,7 +7,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CATKIN_PACKAGE_DEPENDENCIES
   ocs2_core
   ocs2_robotic_tools
-  ocs2_robotic_assets
+  gazebo_robotic_assets
   ocs2_pinocchio_interface
 )
 

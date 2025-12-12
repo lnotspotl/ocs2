@@ -5,7 +5,7 @@
     <arg name="debug"       default="false" />
 
     <!-- The URDF model of the robot -->
-    <arg name="urdfFile"    value="$(find ocs2_robotic_assets)/resources/mobile_manipulator/mabi_mobile/urdf/mabi_mobile.urdf" />
+    <arg name="urdfFile"    value="$(find gazebo_robotic_assets)/resources/mobile_manipulator/mabi_mobile/urdf/mabi_mobile.urdf" />
     <!-- The task file for the mpc. -->
     <arg name="taskFile"    value="$(find ocs2_mobile_manipulator)/config/mabi_mobile/task.info" />
     <!-- The library folder to generate CppAD codegen into -->

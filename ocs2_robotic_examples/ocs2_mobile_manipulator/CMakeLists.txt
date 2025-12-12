@@ -9,7 +9,7 @@ set(CATKIN_PACKAGE_DEPENDENCIES
   ocs2_ddp
   ocs2_mpc
   ocs2_robotic_tools
-  ocs2_robotic_assets
+  gazebo_robotic_assets
   ocs2_pinocchio_interface
   ocs2_self_collision
 )

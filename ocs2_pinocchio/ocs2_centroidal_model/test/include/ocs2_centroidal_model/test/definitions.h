@@ -34,7 +34,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <vector>
 
 #include <ocs2_core/Types.h>
-#include <ocs2_robotic_assets/package_path.h>
+#include <gazebo_robotic_assets/package_path.h>
 
 namespace ocs2 {
 namespace centroidal_model {

@@ -40,7 +40,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 TEST(LeggedRobotRaisim, Conversions) {
   // paths to files
   std::string taskFile = ros::package::getPath("ocs2_legged_robot") + "/config/mpc/task.info";
-  std::string urdfFile = ros::package::getPath("ocs2_robotic_assets") + "/resources/anymal_c/urdf/anymal.urdf";
+  std::string urdfFile = ros::package::getPath("gazebo_robotic_assets") + "/resources/anymal_c/urdf/anymal.urdf";
   std::string referenceFile = ros::package::getPath("ocs2_legged_robot") + "/config/command/reference.info";
   std::string raisimFile = ros::package::getPath("ocs2_legged_robot_raisim") + "/config/raisim.info";
   // interface

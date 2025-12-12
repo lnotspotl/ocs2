@@ -11,7 +11,7 @@
     <!-- The reference related config file of the robot -->
     <arg name="referenceFile"     default="$(find ocs2_legged_robot)/config/command/reference.info"/>
     <!-- The URDF model of the robot -->
-    <arg name="urdfFile"          default="$(find ocs2_robotic_assets)/resources/anymal_c/urdf/anymal.urdf"/>
+    <arg name="urdfFile"          default="$(find gazebo_robotic_assets)/resources/anymal_c/urdf/anymal.urdf"/>
     <!-- The file defining gait definition -->
     <arg name="gaitCommandFile"   default="$(find ocs2_legged_robot)/config/command/gait.info"/>
 

@@ -11,7 +11,7 @@ set(CATKIN_PACKAGE_DEPENDENCIES
   ocs2_ros_interfaces
   ocs2_double_integrator
   ocs2_robotic_tools
-  ocs2_robotic_assets
+  gazebo_robotic_assets
 )
 
 find_package(catkin REQUIRED COMPONENTS
